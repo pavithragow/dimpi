@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test-Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.autodesk.contacttest.CreateContactTest">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="createContactWithOrg"/>
+          <include name="configBS1"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- com.autodesk.contacttest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test-Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
